@@ -1,0 +1,134 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+
+\geometry{a4paper, margin=2.5cm}
+
+% Fix the header height
+\setlength{\headheight}{16.35004pt}
+\addtolength{\topmargin}{-0.996pt}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\includegraphics[height=12pt]{n7.png}}
+\fancyhead[C]{Équipe KL-4}
+\fancyhead[R]{\thepage}
+\fancyfoot[C]{Simulateur d'Avion - 2025}
+
+% Configuration des listings pour Java
+\definecolor{javared}{rgb}{0.6,0,0}
+\definecolor{javagreen}{rgb}{0.25,0.5,0.35}
+\definecolor{javapurple}{rgb}{0.5,0,0.35}
+\definecolor{javacomment}{rgb}{0.5,0.5,0.5}
+
+\lstset{
+    language=Java,
+    basicstyle=\ttfamily\small,
+    keywordstyle=\color{javapurple}\bfseries,
+    stringstyle=\color{javared},
+    commentstyle=\color{javacomment},
+    numbers=left,
+    numberstyle=\tiny\color{javacomment},
+    stepnumber=1,
+    numbersep=8pt,
+    showspaces=false,
+    showstringspaces=false,
+    breaklines=true,
+    frameround=ftff,
+    frame=lines,
+    backgroundcolor=\color{white},
+    captionpos=b
+}
+
+\title{
+    \includegraphics[width=0.4\textwidth]{n7.png}\\[1cm]
+    \textbf{Rapport Global - Projet Simulateur d'Avion}
+}
+\author{Équipe de Développement}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\thispagestyle{empty}
+
+\tableofcontents
+\newpage
+
+\section{Introduction}
+Ce rapport présente l'ensemble du projet de développement du Simulateur d'Avion, incluant les modifications récentes apportées à l'interface utilisateur et les nouvelles fonctionnalités implémentées.
+
+\section{Contexte du Projet}
+Le Simulateur d'Avion est une application Java permettant de simuler le trafic aérien en temps réel. Le projet a évolué pour inclure de nouvelles fonctionnalités et améliorer l'expérience utilisateur.
+
+\section{Évolutions Récentes}
+\subsection{Amélioration de l'Interface Utilisateur}
+\begin{itemize}
+    \item Réorganisation des boutons du menu principal
+    \item Ajout du bouton "HISTORIQUE DES VOLS"
+    \item Repositionnement du bouton "QUITTER"
+    \item Amélioration de l'ergonomie générale
+\end{itemize}
+
+\subsection{Nouvelles Fonctionnalités}
+\begin{itemize}
+    \item Système d'historique des vols
+    \item Visualisation du trafic aérien
+    \item Interface de simulation améliorée
+\end{itemize}
+
+\section{Architecture Technique}
+\subsection{Structure du Code}
+\begin{itemize}
+    \item MenuPage.java : Gestion de l'interface principale
+    \item SimulationPanel.java : Logique de simulation
+    \item FlightHistoryPanel.java : Gestion de l'historique
+    \item Main.java : Point d'entrée de l'application
+\end{itemize}
+
+\section{Améliorations Apportées}
+\subsection{Interface Utilisateur}
+\begin{itemize}
+    \item Disposition plus intuitive des boutons
+    \item Meilleure séparation des fonctionnalités
+    \item Interface plus professionnelle
+\end{itemize}
+
+\subsection{Fonctionnalités}
+\begin{itemize}
+    \item Ajout du système d'historique
+    \item Amélioration de la simulation
+    \item Meilleure gestion des interactions
+\end{itemize}
+
+\section{Documentation}
+\subsection{Manuel Utilisateur}
+Un manuel utilisateur complet a été créé pour guider les utilisateurs dans l'utilisation de l'application.
+
+\subsection{Rapports Techniques}
+\begin{itemize}
+    \item Rapport individuel détaillant les modifications
+    \item Documentation du code
+    \item Guide d'installation
+\end{itemize}
+
+\section{Conclusion}
+Le projet a connu des améliorations significatives, notamment dans son interface utilisateur et ses fonctionnalités. Les modifications apportées ont permis de créer une application plus intuitive et plus complète.
+
+\section{Perspectives}
+\begin{itemize}
+    \item Amélioration continue de l'interface
+    \item Ajout de nouvelles fonctionnalités
+    \item Optimisation des performances
+\end{itemize}
+
+\end{document} 
